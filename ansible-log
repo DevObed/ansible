@@ -1,0 +1,317 @@
+2023-10-01 03:15:25,801 p=6325 u=ec2-user n=ansible | 172.31.20.209 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.7"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-10-01 03:15:26,048 p=6325 u=ec2-user n=ansible | 172.31.24.163 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-10-01 15:18:07,203 p=3400 u=ec2-user n=ansible | 172.31.20.209 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.7"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-10-01 15:18:07,436 p=3400 u=ec2-user n=ansible | 172.31.24.163 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-10-02 13:43:43,049 p=11542 u=ec2-user n=ansible | 172.31.24.163 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-10-02 13:43:44,826 p=11542 u=ec2-user n=ansible | 172.31.20.209 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.7"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-10-02 14:01:50,539 p=18467 u=ec2-user n=ansible | 172.31.20.209 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.7"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-10-02 14:01:50,770 p=18467 u=ec2-user n=ansible | 172.31.24.163 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-10-02 14:12:26,014 p=22469 u=ec2-user n=ansible | ERROR! Hosts list cannot be empty. Please check your playbook
+2023-10-02 14:13:24,954 p=22868 u=ec2-user n=ansible | playbook: server-patch.yml
+2023-10-02 14:17:09,033 p=24267 u=ec2-user n=ansible | PLAY [Update and Reboot Servers] ***********************************************************************************************************************
+2023-10-02 14:17:09,067 p=24267 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************
+2023-10-02 14:17:11,720 p=24267 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 14:17:11,735 p=24267 u=ec2-user n=ansible | TASK [Update YUM (Red Hat/CentOS)] *********************************************************************************************************************
+2023-10-02 14:17:16,246 p=24267 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 14:17:16,253 p=24267 u=ec2-user n=ansible | TASK [Update APT (Debian/Ubuntu)] **********************************************************************************************************************
+2023-10-02 14:17:16,268 p=24267 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 14:17:16,283 p=24267 u=ec2-user n=ansible | TASK [Reboot the server] *******************************************************************************************************************************
+2023-10-02 14:17:16,300 p=24267 u=ec2-user n=ansible | changed: [172.31.20.209]
+2023-10-02 14:17:16,310 p=24267 u=ec2-user n=ansible | TASK [Wait for server to come back up] *****************************************************************************************************************
+2023-10-02 14:17:16,972 p=24267 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 14:17:16,989 p=24267 u=ec2-user n=ansible | PLAY RECAP *********************************************************************************************************************************************
+2023-10-02 14:17:16,989 p=24267 u=ec2-user n=ansible | 172.31.20.209              : ok=3    changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-10-02 14:27:44,829 p=28940 u=ec2-user n=ansible | PLAY [Update and Reboot Servers] ***********************************************************************************************************************
+2023-10-02 14:27:44,843 p=28940 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************
+2023-10-02 14:27:46,456 p=28940 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 14:27:46,469 p=28940 u=ec2-user n=ansible | TASK [Update YUM (Red Hat/CentOS)] *********************************************************************************************************************
+2023-10-02 14:27:49,499 p=28940 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 14:27:49,507 p=28940 u=ec2-user n=ansible | TASK [Update APT (Debian/Ubuntu)] **********************************************************************************************************************
+2023-10-02 14:27:49,521 p=28940 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 14:27:49,529 p=28940 u=ec2-user n=ansible | TASK [Reboot the server] *******************************************************************************************************************************
+2023-10-02 14:28:40,610 p=28940 u=ec2-user n=ansible | changed: [172.31.20.209]
+2023-10-02 14:28:40,625 p=28940 u=ec2-user n=ansible | TASK [Wait for server to come back up] *****************************************************************************************************************
+2023-10-02 14:28:41,203 p=28940 u=ec2-user n=ansible | ok: [172.31.20.209 -> localhost]
+2023-10-02 14:28:41,240 p=28940 u=ec2-user n=ansible | PLAY RECAP *********************************************************************************************************************************************
+2023-10-02 14:28:41,240 p=28940 u=ec2-user n=ansible | 172.31.20.209              : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-10-02 15:04:39,067 p=10468 u=ec2-user n=ansible | PLAY [Update and Reboot Servers] ***********************************************
+2023-10-02 15:04:39,080 p=10468 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 15:04:43,654 p=10468 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:04:43,672 p=10468 u=ec2-user n=ansible | TASK [Update YUM (Red Hat/CentOS)] *********************************************
+2023-10-02 15:04:48,517 p=10468 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:04:48,524 p=10468 u=ec2-user n=ansible | TASK [Update APT (Debian/Ubuntu)] **********************************************
+2023-10-02 15:04:48,542 p=10468 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 15:04:48,550 p=10468 u=ec2-user n=ansible | TASK [Reboot the server] *******************************************************
+2023-10-02 15:05:40,852 p=10468 u=ec2-user n=ansible | changed: [172.31.20.209]
+2023-10-02 15:05:40,862 p=10468 u=ec2-user n=ansible | TASK [Wait for server to come back up] *****************************************
+2023-10-02 15:05:41,424 p=10468 u=ec2-user n=ansible | ok: [172.31.20.209 -> localhost]
+2023-10-02 15:05:41,441 p=10468 u=ec2-user n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 15:05:41,441 p=10468 u=ec2-user n=ansible | 172.31.20.209              : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-10-02 15:05:47,024 p=11198 u=ec2-user n=ansible | PLAY [Update and Reboot Servers] ***********************************************
+2023-10-02 15:05:47,036 p=11198 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 15:05:51,118 p=11198 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:05:51,129 p=11198 u=ec2-user n=ansible | TASK [Update YUM (Red Hat/CentOS)] *********************************************
+2023-10-02 15:05:55,711 p=11198 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:05:55,719 p=11198 u=ec2-user n=ansible | TASK [Update APT (Debian/Ubuntu)] **********************************************
+2023-10-02 15:05:55,735 p=11198 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 15:05:55,747 p=11198 u=ec2-user n=ansible | TASK [Reboot the server] *******************************************************
+2023-10-02 15:06:48,380 p=11198 u=ec2-user n=ansible | changed: [172.31.20.209]
+2023-10-02 15:06:48,399 p=11198 u=ec2-user n=ansible | TASK [Wait for server to come back up] *****************************************
+2023-10-02 15:06:48,847 p=11198 u=ec2-user n=ansible | ok: [172.31.20.209 -> localhost]
+2023-10-02 15:06:48,860 p=11198 u=ec2-user n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 15:06:48,861 p=11198 u=ec2-user n=ansible | 172.31.20.209              : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-10-02 15:06:54,448 p=11963 u=ec2-user n=ansible | PLAY [Update and Reboot Servers] ***********************************************
+2023-10-02 15:06:54,458 p=11963 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 15:06:59,206 p=11963 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:06:59,218 p=11963 u=ec2-user n=ansible | TASK [Update YUM (Red Hat/CentOS)] *********************************************
+2023-10-02 15:07:03,587 p=11963 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:07:03,595 p=11963 u=ec2-user n=ansible | TASK [Update APT (Debian/Ubuntu)] **********************************************
+2023-10-02 15:07:03,609 p=11963 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 15:07:03,617 p=11963 u=ec2-user n=ansible | TASK [Reboot the server] *******************************************************
+2023-10-02 15:07:44,111 p=11963 u=ec2-user n=ansible | changed: [172.31.20.209]
+2023-10-02 15:07:44,122 p=11963 u=ec2-user n=ansible | TASK [Wait for server to come back up] *****************************************
+2023-10-02 15:07:44,587 p=11963 u=ec2-user n=ansible | ok: [172.31.20.209 -> localhost]
+2023-10-02 15:07:44,601 p=11963 u=ec2-user n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 15:07:44,601 p=11963 u=ec2-user n=ansible | 172.31.20.209              : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-10-02 15:07:52,135 p=12632 u=ec2-user n=ansible | PLAY [Update and Reboot Servers] ***********************************************
+2023-10-02 15:07:52,144 p=12632 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 15:07:56,758 p=12632 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:07:56,785 p=12632 u=ec2-user n=ansible | TASK [Update YUM (Red Hat/CentOS)] *********************************************
+2023-10-02 15:08:09,628 p=12632 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:08:09,636 p=12632 u=ec2-user n=ansible | TASK [Update APT (Debian/Ubuntu)] **********************************************
+2023-10-02 15:08:09,649 p=12632 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 15:08:09,661 p=12632 u=ec2-user n=ansible | TASK [Reboot the server] *******************************************************
+2023-10-02 15:09:01,528 p=12632 u=ec2-user n=ansible | changed: [172.31.20.209]
+2023-10-02 15:09:01,537 p=12632 u=ec2-user n=ansible | TASK [Wait for server to come back up] *****************************************
+2023-10-02 15:09:01,971 p=12632 u=ec2-user n=ansible | ok: [172.31.20.209 -> localhost]
+2023-10-02 15:09:01,984 p=12632 u=ec2-user n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 15:09:01,984 p=12632 u=ec2-user n=ansible | 172.31.20.209              : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-10-02 15:09:07,453 p=13471 u=ec2-user n=ansible | PLAY [Update and Reboot Servers] ***********************************************
+2023-10-02 15:09:07,470 p=13471 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 15:09:12,488 p=13471 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:09:12,501 p=13471 u=ec2-user n=ansible | TASK [Update YUM (Red Hat/CentOS)] *********************************************
+2023-10-02 15:09:16,575 p=13471 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:09:16,590 p=13471 u=ec2-user n=ansible | TASK [Update APT (Debian/Ubuntu)] **********************************************
+2023-10-02 15:09:16,606 p=13471 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 15:09:16,617 p=13471 u=ec2-user n=ansible | TASK [Reboot the server] *******************************************************
+2023-10-02 15:10:09,275 p=13471 u=ec2-user n=ansible | changed: [172.31.20.209]
+2023-10-02 15:10:09,283 p=13471 u=ec2-user n=ansible | TASK [Wait for server to come back up] *****************************************
+2023-10-02 15:10:09,676 p=13471 u=ec2-user n=ansible | ok: [172.31.20.209 -> localhost]
+2023-10-02 15:10:09,689 p=13471 u=ec2-user n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 15:10:09,689 p=13471 u=ec2-user n=ansible | 172.31.20.209              : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-10-02 15:10:14,804 p=14252 u=ec2-user n=ansible | PLAY [Update and Reboot Servers] ***********************************************
+2023-10-02 15:10:14,815 p=14252 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 15:10:19,499 p=14252 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:10:19,515 p=14252 u=ec2-user n=ansible | TASK [Update YUM (Red Hat/CentOS)] *********************************************
+2023-10-02 15:10:23,477 p=14252 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:10:23,487 p=14252 u=ec2-user n=ansible | TASK [Update APT (Debian/Ubuntu)] **********************************************
+2023-10-02 15:10:23,512 p=14252 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 15:10:23,527 p=14252 u=ec2-user n=ansible | TASK [Reboot the server] *******************************************************
+2023-10-02 15:11:16,266 p=14252 u=ec2-user n=ansible | changed: [172.31.20.209]
+2023-10-02 15:11:16,283 p=14252 u=ec2-user n=ansible | TASK [Wait for server to come back up] *****************************************
+2023-10-02 15:11:16,746 p=14252 u=ec2-user n=ansible | ok: [172.31.20.209 -> localhost]
+2023-10-02 15:11:16,760 p=14252 u=ec2-user n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 15:11:16,761 p=14252 u=ec2-user n=ansible | 172.31.20.209              : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-10-02 15:11:21,915 p=15013 u=ec2-user n=ansible | PLAY [Update and Reboot Servers] ***********************************************
+2023-10-02 15:11:21,924 p=15013 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 15:11:27,383 p=15013 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:11:27,403 p=15013 u=ec2-user n=ansible | TASK [Update YUM (Red Hat/CentOS)] *********************************************
+2023-10-02 15:11:31,799 p=15013 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:11:31,808 p=15013 u=ec2-user n=ansible | TASK [Update APT (Debian/Ubuntu)] **********************************************
+2023-10-02 15:11:31,825 p=15013 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 15:11:31,835 p=15013 u=ec2-user n=ansible | TASK [Reboot the server] *******************************************************
+2023-10-02 15:12:24,595 p=15013 u=ec2-user n=ansible | changed: [172.31.20.209]
+2023-10-02 15:12:24,606 p=15013 u=ec2-user n=ansible | TASK [Wait for server to come back up] *****************************************
+2023-10-02 15:12:25,107 p=15013 u=ec2-user n=ansible | ok: [172.31.20.209 -> localhost]
+2023-10-02 15:12:25,123 p=15013 u=ec2-user n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 15:12:25,123 p=15013 u=ec2-user n=ansible | 172.31.20.209              : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-10-02 15:12:29,526 p=15788 u=ec2-user n=ansible | PLAY [Update and Reboot Servers] ***********************************************
+2023-10-02 15:12:29,536 p=15788 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 15:12:34,287 p=15788 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:12:34,308 p=15788 u=ec2-user n=ansible | TASK [Update YUM (Red Hat/CentOS)] *********************************************
+2023-10-02 15:12:38,363 p=15788 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 15:12:38,372 p=15788 u=ec2-user n=ansible | TASK [Update APT (Debian/Ubuntu)] **********************************************
+2023-10-02 15:12:38,391 p=15788 u=ec2-user n=ansible | skipping: [172.31.20.209]
+2023-10-02 15:12:38,398 p=15788 u=ec2-user n=ansible | TASK [Reboot the server] *******************************************************
+2023-10-02 15:13:30,612 p=15788 u=ec2-user n=ansible | changed: [172.31.20.209]
+2023-10-02 15:13:30,620 p=15788 u=ec2-user n=ansible | TASK [Wait for server to come back up] *****************************************
+2023-10-02 15:13:31,086 p=15788 u=ec2-user n=ansible | ok: [172.31.20.209 -> localhost]
+2023-10-02 15:13:31,101 p=15788 u=ec2-user n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 15:13:31,101 p=15788 u=ec2-user n=ansible | 172.31.20.209              : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-10-02 17:56:17,466 p=10318 u=ec2-user n=ansible | playbook: site.yml
+2023-10-02 17:56:25,050 p=10482 u=ec2-user n=ansible | PLAY [webservers] **************************************************************************************************************************************
+2023-10-02 17:56:25,145 p=10482 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************
+2023-10-02 17:56:30,107 p=10482 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 17:56:30,123 p=10482 u=ec2-user n=ansible | TASK [apache : Install Apache web server] **************************************************************************************************************
+2023-10-02 17:56:31,168 p=10482 u=ec2-user n=ansible | fatal: [172.31.20.209]: FAILED! => {"changed": false, "msg": "python3-apt must be installed to use check mode. If run normally this module can auto-install it."}
+2023-10-02 17:56:31,169 p=10482 u=ec2-user n=ansible | PLAY RECAP *********************************************************************************************************************************************
+2023-10-02 17:56:31,170 p=10482 u=ec2-user n=ansible | 172.31.20.209              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-02 17:59:15,828 p=12310 u=ec2-user n=ansible | PLAY [webservers] **************************************************************************************************************************************
+2023-10-02 17:59:15,838 p=12310 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************
+2023-10-02 17:59:17,695 p=12310 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 17:59:17,708 p=12310 u=ec2-user n=ansible | TASK [apache : Install Apache web server] **************************************************************************************************************
+2023-10-02 17:59:18,523 p=12310 u=ec2-user n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2023-10-02 17:59:18,526 p=12310 u=ec2-user n=ansible | fatal: [172.31.20.209]: FAILED! => {"changed": false, "cmd": "apt-get update", "msg": "[Errno 2] No such file or directory: b'apt-get': b'apt-get'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2023-10-02 17:59:18,527 p=12310 u=ec2-user n=ansible | PLAY RECAP *********************************************************************************************************************************************
+2023-10-02 17:59:18,527 p=12310 u=ec2-user n=ansible | 172.31.20.209              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-02 18:04:59,425 p=15593 u=ec2-user n=ansible | PLAY [webservers] **************************************************************************************************************************************
+2023-10-02 18:04:59,436 p=15593 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************
+2023-10-02 18:05:01,200 p=15593 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 18:05:01,216 p=15593 u=ec2-user n=ansible | TASK [apache : Install Apache web server] **************************************************************************************************************
+2023-10-02 18:05:02,158 p=15593 u=ec2-user n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2023-10-02 18:05:02,159 p=15593 u=ec2-user n=ansible | fatal: [172.31.20.209]: FAILED! => {"changed": false, "cmd": "apt-get update", "msg": "[Errno 2] No such file or directory: b'apt-get': b'apt-get'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2023-10-02 18:05:02,162 p=15593 u=ec2-user n=ansible | PLAY RECAP *********************************************************************************************************************************************
+2023-10-02 18:05:02,162 p=15593 u=ec2-user n=ansible | 172.31.20.209              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-02 18:12:50,715 p=20391 u=ec2-user n=ansible | PLAY [webservers, databaseservers] *********************************************************************************************************************
+2023-10-02 18:12:50,729 p=20391 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************
+2023-10-02 18:12:52,358 p=20391 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 18:12:52,449 p=20391 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-02 18:12:52,464 p=20391 u=ec2-user n=ansible | TASK [apache : Install Apache web server] **************************************************************************************************************
+2023-10-02 18:12:53,272 p=20391 u=ec2-user n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2023-10-02 18:12:53,273 p=20391 u=ec2-user n=ansible | fatal: [172.31.20.209]: FAILED! => {"changed": false, "cmd": "apt-get update", "msg": "[Errno 2] No such file or directory: b'apt-get': b'apt-get'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2023-10-02 18:13:01,358 p=20391 u=ec2-user n=ansible | changed: [172.31.24.163]
+2023-10-02 18:13:01,367 p=20391 u=ec2-user n=ansible | TASK [apache : Start Apache service] *******************************************************************************************************************
+2023-10-02 18:13:02,346 p=20391 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-02 18:13:02,399 p=20391 u=ec2-user n=ansible | PLAY RECAP *********************************************************************************************************************************************
+2023-10-02 18:13:02,400 p=20391 u=ec2-user n=ansible | 172.31.20.209              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-02 18:13:02,400 p=20391 u=ec2-user n=ansible | 172.31.24.163              : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-02 18:38:25,558 p=2074 u=ec2-user n=ansible | PLAY [webservers, databaseservers] *********************************************************************************************************************
+2023-10-02 18:38:25,568 p=2074 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************
+2023-10-02 18:38:27,172 p=2074 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-02 18:38:27,468 p=2074 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-02 18:38:27,481 p=2074 u=ec2-user n=ansible | TASK [apache : Install Apache web server] **************************************************************************************************************
+2023-10-02 18:38:28,249 p=2074 u=ec2-user n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2023-10-02 18:38:28,249 p=2074 u=ec2-user n=ansible | fatal: [172.31.20.209]: FAILED! => {"changed": false, "cmd": "apt-get update", "msg": "[Errno 2] No such file or directory: b'apt-get': b'apt-get'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2023-10-02 18:38:29,057 p=2074 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-02 18:38:29,065 p=2074 u=ec2-user n=ansible | TASK [apache : Start Apache service] *******************************************************************************************************************
+2023-10-02 18:38:29,951 p=2074 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-02 18:38:29,976 p=2074 u=ec2-user n=ansible | PLAY RECAP *********************************************************************************************************************************************
+2023-10-02 18:38:29,976 p=2074 u=ec2-user n=ansible | 172.31.20.209              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-02 18:38:29,976 p=2074 u=ec2-user n=ansible | 172.31.24.163              : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-03 00:15:22,729 p=31254 u=ec2-user n=ansible | Starting galaxy role install process
+2023-10-03 00:15:22,813 p=31254 u=ec2-user n=ansible | - downloading role 'java', owned by geerlingguy
+2023-10-03 00:15:22,996 p=31254 u=ec2-user n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-java/archive/2.3.1.tar.gz
+2023-10-03 00:15:23,178 p=31254 u=ec2-user n=ansible | - extracting geerlingguy.java to /home/ec2-user/.ansible/roles/geerlingguy.java
+2023-10-03 00:15:23,182 p=31254 u=ec2-user n=ansible | - geerlingguy.java (2.3.1) was installed successfully
+2023-10-03 00:20:36,657 p=1883 u=ec2-user n=ansible | Starting galaxy role install process
+2023-10-03 00:20:36,658 p=1883 u=ec2-user n=ansible | [WARNING]: - geerlingguy.java (2.3.1) is already installed - use --force to change version to unspecified
+
+2023-10-03 00:21:33,543 p=2468 u=ec2-user n=ansible | Starting galaxy role install process
+2023-10-03 00:21:33,621 p=2468 u=ec2-user n=ansible | - downloading role 'ntp', owned by geerlingguy
+2023-10-03 00:21:33,833 p=2468 u=ec2-user n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-ntp/archive/2.3.3.tar.gz
+2023-10-03 00:21:34,005 p=2468 u=ec2-user n=ansible | - extracting geerlingguy.ntp to /home/ec2-user/.ansible/roles/geerlingguy.ntp
+2023-10-03 00:21:34,012 p=2468 u=ec2-user n=ansible | - geerlingguy.ntp (2.3.3) was installed successfully
+2023-10-03 00:27:54,828 p=6301 u=ec2-user n=ansible | PLAY [webservers, databaseservers] *********************************************************************************************************************
+2023-10-03 00:27:54,842 p=6301 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************
+2023-10-03 00:27:56,534 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:27:56,540 p=6301 u=ec2-user n=ansible | ok: [172.31.20.209]
+2023-10-03 00:27:56,553 p=6301 u=ec2-user n=ansible | TASK [apache : Install Apache web server] **************************************************************************************************************
+2023-10-03 00:27:57,303 p=6301 u=ec2-user n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2023-10-03 00:27:57,304 p=6301 u=ec2-user n=ansible | fatal: [172.31.20.209]: FAILED! => {"changed": false, "cmd": "apt-get update", "msg": "[Errno 2] No such file or directory: b'apt-get': b'apt-get'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2023-10-03 00:27:58,073 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:27:58,086 p=6301 u=ec2-user n=ansible | TASK [apache : Start Apache service] *******************************************************************************************************************
+2023-10-03 00:27:59,017 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:27:59,046 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : Include OS-specific variables for Fedora or FreeBSD.] *************************************************************************
+2023-10-03 00:27:59,064 p=6301 u=ec2-user n=ansible | skipping: [172.31.24.163]
+2023-10-03 00:27:59,075 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : Include version-specific variables for CentOS/RHEL.] **************************************************************************
+2023-10-03 00:27:59,092 p=6301 u=ec2-user n=ansible | skipping: [172.31.24.163]
+2023-10-03 00:27:59,103 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : Include version-specific variables for Ubuntu.] *******************************************************************************
+2023-10-03 00:27:59,152 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:27:59,169 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : Include version-specific variables for Debian.] *******************************************************************************
+2023-10-03 00:27:59,236 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:27:59,245 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : Define java_packages.] ********************************************************************************************************
+2023-10-03 00:27:59,285 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:27:59,294 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : include_tasks] ****************************************************************************************************************
+2023-10-03 00:27:59,308 p=6301 u=ec2-user n=ansible | skipping: [172.31.24.163]
+2023-10-03 00:27:59,317 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : include_tasks] ****************************************************************************************************************
+2023-10-03 00:27:59,341 p=6301 u=ec2-user n=ansible | included: /home/ec2-user/.ansible/roles/geerlingguy.java/tasks/setup-Debian.yml for 172.31.24.163
+2023-10-03 00:27:59,351 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : Ensure 'man' directory exists.] ***********************************************************************************************
+2023-10-03 00:27:59,886 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:27:59,896 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : Ensure Java is installed.] ****************************************************************************************************
+2023-10-03 00:28:30,140 p=6301 u=ec2-user n=ansible | changed: [172.31.24.163]
+2023-10-03 00:28:30,149 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : include_tasks] ****************************************************************************************************************
+2023-10-03 00:28:30,163 p=6301 u=ec2-user n=ansible | skipping: [172.31.24.163]
+2023-10-03 00:28:30,173 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.java : Set JAVA_HOME if configured.] *************************************************************************************************
+2023-10-03 00:28:30,192 p=6301 u=ec2-user n=ansible | skipping: [172.31.24.163]
+2023-10-03 00:28:30,207 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Include OS-specific variables.] ************************************************************************************************
+2023-10-03 00:28:30,234 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:28:30,249 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Set the ntp_driftfile variable.] ***********************************************************************************************
+2023-10-03 00:28:30,277 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:28:30,286 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Set the ntp_package variable.] *************************************************************************************************
+2023-10-03 00:28:30,308 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:28:30,318 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Set the ntp_config_file variable.] *********************************************************************************************
+2023-10-03 00:28:30,340 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:28:30,349 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Set the ntp_daemon variable.] **************************************************************************************************
+2023-10-03 00:28:30,370 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:28:30,380 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Ensure NTP package is installed.] **********************************************************************************************
+2023-10-03 00:28:36,897 p=6301 u=ec2-user n=ansible | changed: [172.31.24.163]
+2023-10-03 00:28:36,913 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Ensure tzdata package is installed (Linux).] ***********************************************************************************
+2023-10-03 00:28:38,286 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:28:38,297 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Set timezone.] *****************************************************************************************************************
+2023-10-03 00:28:38,874 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:28:38,887 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Populate service facts.] *******************************************************************************************************
+2023-10-03 00:28:41,651 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:28:41,665 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Disable systemd-timesyncd if it's running but ntp is enabled.] *****************************************************************
+2023-10-03 00:28:42,384 p=6301 u=ec2-user n=ansible | changed: [172.31.24.163]
+2023-10-03 00:28:42,398 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Ensure NTP is running and enabled as configured.] ******************************************************************************
+2023-10-03 00:28:42,962 p=6301 u=ec2-user n=ansible | ok: [172.31.24.163]
+2023-10-03 00:28:42,980 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Ensure NTP is stopped and disabled as configured.] *****************************************************************************
+2023-10-03 00:28:43,023 p=6301 u=ec2-user n=ansible | skipping: [172.31.24.163]
+2023-10-03 00:28:43,040 p=6301 u=ec2-user n=ansible | TASK [geerlingguy.ntp : Generate ntp configuration file.] **********************************************************************************************
+2023-10-03 00:28:43,080 p=6301 u=ec2-user n=ansible | skipping: [172.31.24.163]
+2023-10-03 00:28:43,123 p=6301 u=ec2-user n=ansible | PLAY RECAP *********************************************************************************************************************************************
+2023-10-03 00:28:43,123 p=6301 u=ec2-user n=ansible | 172.31.20.209              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-03 00:28:43,124 p=6301 u=ec2-user n=ansible | 172.31.24.163              : ok=20   changed=3    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
